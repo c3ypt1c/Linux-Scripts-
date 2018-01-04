@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "N: Updating lists";
+apt-get -qq -y update;
+echo "N: Updating modules";
+apt-get -qq -y upgrade;
+echo "N: Updating system";
+apt-get -qq -y dist-upgrade;
+echo "N: Auto-removing";
+apt-get -qq -y autoremove;
+echo "N: Cleaning";
+apt-get -qq -y clean;
+echo "N: Done";
